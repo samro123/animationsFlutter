@@ -1,4 +1,4 @@
-import 'package:animations/animated_align.dart';
+import 'package:animations/animated_container_example.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedAlignExample(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedContanerExample(),));
                 }, child: Text("Animated Aligin Example")),
           ],
         ),
