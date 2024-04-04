@@ -1,16 +1,2 @@
-# animations
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![434047928_941402814388421_5614548391870694582_n](https://github.com/samro123/flutter/assets/103051880/fe046e57-1580-453a-b4ba-cdd248caf9c6)
+![434075088_777778050996279_7793354252505190070_n](https://github.com/samro123/flutter/assets/103051880/fc87dac7-e622-40d9-b16c-5671c92373aa)
