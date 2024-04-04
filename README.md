@@ -1,16 +1,5 @@
-# animations
+Animated version of PositionedDirectional which automatically transitions the child's position over a given duration whenever the given position changes. The ambient Directionality is used to determine whether start is to the left or to the right.
+![434140640_935385044786622_7191903407089045597_n](https://github.com/samro123/flutter/assets/103051880/ee9712e0-7479-40d2-8735-ae02fa6b7a88)
+![433818755_300256322935759_4495728605520477024_n](https://github.com/samro123/flutter/assets/103051880/256e8f2d-5bbd-4224-8c1c-eb3e757151dd)
+![434129666_956903789259027_135217151054468432_n](https://github.com/samro123/flutter/assets/103051880/28426069-739f-4855-9dfb-c019fe691906)
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
