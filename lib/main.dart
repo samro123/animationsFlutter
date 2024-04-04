@@ -1,4 +1,4 @@
-import 'package:animations/animated_physical.dart';
+import 'package:animations/animated_positioned.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedPhysicalModelExample(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedPositionExample(),));
                 }, child: Text("Animated Aligin Example")),
           ],
         ),
