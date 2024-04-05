@@ -1,4 +1,4 @@
-import 'package:animations/animated_positioned_direction.dart';
+import 'package:animations/animated_cross_fare.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedPositionedDirectionExample(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedCrossFareExample(),));
                 }, child: Text("Animated Aligin Example")),
           ],
         ),
