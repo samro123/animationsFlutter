@@ -17,20 +17,7 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample> {
         title: Text("Animated Switcher"),
       ),
       body: Center(
-        child: AnimatedSwitcher(
-          switchInCurve: Curves.bounceInOut,
-          switchOutCurve: Curves.decelerate,
-          duration: Duration(seconds: 1),
-          child: _isFirstWidgetVisible
-              ? ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      _isFirstWidgetVisible = !_isFirstWidgetVisible;
-                    });
-                  },
-                  child: Text("Login Now!"))
-              : const CircularProgressIndicator(),
-        ),
+        child: _ChildAnimatedSwitcher(),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.switch_account),
@@ -39,6 +26,29 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample> {
             _isFirstWidgetVisible = !_isFirstWidgetVisible;
           });
         },
+      ),
+    );
+  }
+
+  Widget _ChildAnimatedSwitcher(){
+    return AnimatedSwitcher(
+        duration: const Duration(seconds: 1),
+        transitionBuilder: (child, animation) {
+          return ScaleTransition(
+              scale: animation,
+              child: child,
+          );
+        },
+      child:_isFirstWidgetVisible ? Icon(
+        Icons.favorite,
+        color: Colors.red,
+        size: 200,
+        key: UniqueKey(),
+      ): Icon(
+        Icons.favorite_border,
+        color: Colors.grey,
+        size: 200,
+        key: UniqueKey(),
       ),
     );
   }
