@@ -1,4 +1,4 @@
-import 'package:animations/animated_cross_fare.dart';
+import 'package:animations/animated_switcher.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedCrossFareExample(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedSwitcherExample(),));
                 }, child: Text("Animated Aligin Example")),
           ],
         ),
