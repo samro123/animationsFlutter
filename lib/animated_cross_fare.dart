@@ -26,19 +26,9 @@ class _AnimatedCrossFareExampleState extends State<AnimatedCrossFareExample> {
           child: AnimatedCrossFade(
             firstCurve: Curves.linear,
             secondCurve: Curves.linear,
-            duration: const Duration(milliseconds: 400),
-            firstChild: Container(
-              height: 200,
-              width: 200,
-              color: Colors.blueAccent,
-              child: Image.asset("assets/jerry.png"),
-            ),
-            secondChild: Container(
-              height: 200,
-              width: 200,
-              color: Colors.blueAccent,
-              child: Image.asset("assets/dog.png"),
-            ),
+            duration: const Duration(seconds: 1),
+            firstChild: Image.network("https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+            secondChild: Image.network("https://images.pexels.com/photos/459203/pexels-photo-459203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
             crossFadeState: _isFirstWidgetVisible
                 ? CrossFadeState.showFirst
                 : CrossFadeState.showSecond,
