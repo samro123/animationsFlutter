@@ -9,14 +9,19 @@ class AnimatedIconExample extends StatefulWidget {
 
 class _AnimatedIconExampleState extends State<AnimatedIconExample> with SingleTickerProviderStateMixin{
   late AnimationController _animationController;
+  late Animation<double> _animation;
   @override
   void initState() {
     super.initState();
     _animationController = AnimationController(
         vsync: this,
-        duration: Duration(seconds: 1)
+        duration: Duration(seconds: 2)
     );
-    _animationController.repeat(reverse: false);
+    _animation =CurvedAnimation(
+        parent: _animationController,
+        curve: Curves.easeIn
+    );
+    _animationController.forward();
   }
   @override
   void dispose() {
@@ -30,9 +35,13 @@ class _AnimatedIconExampleState extends State<AnimatedIconExample> with SingleTi
         title: Text("Animated Icon"),
       ),
       body: Center(
-        child: AnimatedIcon(
-          icon: AnimatedIcons.play_pause,
-          progress: _animationController,
+        child: ScaleTransition(
+          scale: _animationController,
+          child: Container(
+            width: 200,
+            height: 200,
+            color: Colors.cyan,
+          )
         ),
       ),
     );
