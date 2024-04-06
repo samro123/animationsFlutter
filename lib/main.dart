@@ -1,4 +1,4 @@
-import 'package:animations/positioned_transition.dart';
+import 'package:animations/size_transition.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const PositionedTransitionExample(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const SizeTransitionExample(),));
                 }, child: Text("Animated Aligin Example")),
           ],
         ),
