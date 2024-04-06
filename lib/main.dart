@@ -1,4 +1,4 @@
-import 'package:animations/animation_icon.dart';
+import 'package:animations/animated_list.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedIconExample(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedListExample(),));
                 }, child: Text("Animated Aligin Example")),
           ],
         ),
