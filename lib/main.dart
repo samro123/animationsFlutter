@@ -1,4 +1,4 @@
-import 'package:animations/rotation_transition.dart';
+import 'package:animations/animated_builder.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const RotationTransitionExample(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedBuilderExample(),));
                 }, child: Text("Animated Aligin Example")),
           ],
         ),
