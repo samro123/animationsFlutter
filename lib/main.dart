@@ -1,4 +1,4 @@
-import 'package:animations/animated_builder.dart';
+import 'package:animations/animation_fade_transition.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedBuilderExample(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimationFadeTransition(),));
                 }, child: Text("Animated Aligin Example")),
           ],
         ),
