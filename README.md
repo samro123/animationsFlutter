@@ -1,4 +1,4 @@
-AnimatedCrossFade Widget creates a fade transition between two widgets when one widget is replaced by another. It is used when you need to give a fade kind of transition in between two widgets.
-![434006624_969986234155669_2590908164070611429_n](https://github.com/samro123/animationsFlutter/assets/103051880/00761c92-2258-4c7c-bcb5-6222e4129c12)
-![434138074_971136094612778_5861519004637886989_n](https://github.com/samro123/animationsFlutter/assets/103051880/50faa258-9ed0-4b01-ae10-c0b9da42a500)
 
+
+![434148026_1495314957996304_8967954524866861423_n](https://github.com/samro123/animationsFlutter/assets/103051880/fece53dd-eb0d-436e-bb20-4d4a92ea4c05)
+![434232952_767107835558816_4762712479274368688_n](https://github.com/samro123/animationsFlutter/assets/103051880/83083976-244d-4403-9131-22b1518ac70f)
