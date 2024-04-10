@@ -1,4 +1,4 @@
-import 'package:animations/animated_positioned_directional_transition.dart';
+import 'package:animations/tween_animated_builder.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const AnimatedPositionedDirectionalTransition(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const TweenAnimatedBuilderExample(),));
                 }, child: Text("Animated Aligin Example")),
           ],
         ),
