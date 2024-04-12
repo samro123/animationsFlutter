@@ -1,4 +1,4 @@
-import 'package:animations/tween_animated_builder.dart';
+import 'package:animations/default_textstyle_transition.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const TweenAnimatedBuilderExample(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const DefaultTextStyleTransitionExample(),));
                 }, child: Text("Animated Aligin Example")),
           ],
         ),
