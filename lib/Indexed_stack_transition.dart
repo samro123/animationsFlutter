@@ -44,7 +44,7 @@ class _IndexedStackTransitionExampleState
   void _changeScreen(){
     _currentIndex = _currentIndex + 1;
     if(_currentIndex == 3){
-      _currentIndex == 0;
+      _currentIndex = 0;
     }
     setState(() {
       _animationController.reset();
