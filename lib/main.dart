@@ -1,4 +1,4 @@
-import 'package:animations/default_textstyle_transition.dart';
+import 'package:animations/Indexed_stack_transition.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +39,7 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const DefaultTextStyleTransitionExample(),));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const IndexedStackTransitionExample(),));
                 }, child: Text("Animated Aligin Example")),
           ],
         ),
