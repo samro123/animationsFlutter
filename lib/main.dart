@@ -1,5 +1,11 @@
-import 'package:animations/Indexed_stack_transition.dart';
+import 'package:animations/page_transitions/enter_exit_route.dart';
+import 'package:animations/page_transitions/page_fade_transition.dart';
+import 'package:animations/page_transitions/rotation_route.dart';
+import 'package:animations/page_transitions/size_route.dart';
+import 'package:animations/page_transitions/slide_right_route.dart';
 import 'package:flutter/material.dart';
+
+import 'page_transitions/page_two.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,8 +45,28 @@ class _MyHomeState extends State<MyHome> {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const IndexedStackTransitionExample(),));
+                  Navigator.of(context).push(PageFadeTransition(const PageTwo()));
                 }, child: Text("Animated Aligin Example")),
+
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(SlideRightRoute(const PageTwo()));
+                }, child: Text("Animated Aligin Example 2 ")),
+
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(RotationRoute(const PageTwo()));
+                }, child: Text("Animated Aligin Example 3 ")),
+
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(SizeRoute(const PageTwo()));
+                }, child: Text("Animated Aligin Example 4")),
+
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(EnterExitRoute(this.widget, PageTwo()));
+                }, child: Text("Animated Aligin Example 5")),
           ],
         ),
       ),
